@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T19:59:25",
+ "generated": "2026-11-07T23:26:28",
  "site": {
   "title": "РЕДКИСС",
   "description": "Авторские фигурки из смолы ручной работы: милые бюсты с огромными чёрными глазами, кровь, готика и немного любви.",
@@ -42,47 +42,47 @@
  ],
  "items": [
   {
-   "slug": "brelok-serdtse",
-   "title": "Брелок Сердце",
+   "slug": "skoro",
+   "title": "СКОРО",
    "category": "obvesy",
    "categoryName": "Обвесы",
-   "description": "Тестовое описание.\nВторая строка — перенос сохраняется.\n\nНовый абзац после пустой строки.",
-   "size": "5 см",
-   "material": "Полимерная смола",
-   "status": "В наличии",
-   "price": "1 200 ₽",
-   "isNew": true,
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
+   "isNew": false,
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/brelok-serdtse/01-thumb.webp",
+     "src": "media/skoro/01-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/brelok-serdtse/01-card.webp",
+     "src": "media/skoro/01-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/brelok-serdtse/01-large.webp",
+     "src": "media/skoro/01-large.webp",
      "w": 1200,
      "h": 1600
     }
    },
    "cover2": {
     "thumb": {
-     "src": "media/brelok-serdtse/02-thumb.webp",
+     "src": "media/skoro/02-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/brelok-serdtse/02-card.webp",
+     "src": "media/skoro/02-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/brelok-serdtse/02-large.webp",
+     "src": "media/skoro/02-large.webp",
      "w": 1200,
      "h": 1600
     }
@@ -91,17 +91,17 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/brelok-serdtse/01-thumb.webp",
+      "src": "media/skoro/01-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/brelok-serdtse/01-card.webp",
+      "src": "media/skoro/01-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/brelok-serdtse/01-large.webp",
+      "src": "media/skoro/01-large.webp",
       "w": 1200,
       "h": 1600
      }
@@ -109,17 +109,17 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/brelok-serdtse/02-thumb.webp",
+      "src": "media/skoro/02-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/brelok-serdtse/02-card.webp",
+      "src": "media/skoro/02-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/brelok-serdtse/02-large.webp",
+      "src": "media/skoro/02-large.webp",
       "w": 1200,
       "h": 1600
      }
@@ -127,27 +127,27 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/brelok-serdtse/03-thumb.webp",
+      "src": "media/skoro/03-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/brelok-serdtse/03-card.webp",
+      "src": "media/skoro/03-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/brelok-serdtse/03-large.webp",
+      "src": "media/skoro/03-large.webp",
       "w": 1200,
       "h": 1600
      }
     }
    ],
-   "og": "media/brelok-serdtse/og.jpg"
+   "og": "media/skoro/og.jpg"
   },
   {
-   "slug": "krovavaya-koroleva",
-   "title": "Кровавая королева",
+   "slug": "beladonna",
+   "title": "БЕЛАДОННА",
    "category": "byusty",
    "categoryName": "Бюсты",
    "description": "",
@@ -159,86 +159,120 @@
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/krovavaya-koroleva/01-thumb.webp",
+     "src": "media/beladonna/01-thumb.webp",
      "w": 200,
-     "h": 285
+     "h": 250
     },
     "card": {
-     "src": "media/krovavaya-koroleva/01-card.webp",
+     "src": "media/beladonna/01-card.webp",
      "w": 700,
-     "h": 997
+     "h": 875
     },
     "large": {
-     "src": "media/krovavaya-koroleva/01-large.webp",
-     "w": 735,
-     "h": 1047
+     "src": "media/beladonna/01-large.webp",
+     "w": 1122,
+     "h": 1402
     }
    },
-   "cover2": null,
+   "cover2": {
+    "thumb": {
+     "src": "media/beladonna/02-thumb.webp",
+     "w": 200,
+     "h": 250
+    },
+    "card": {
+     "src": "media/beladonna/02-card.webp",
+     "w": 700,
+     "h": 875
+    },
+    "large": {
+     "src": "media/beladonna/02-large.webp",
+     "w": 1122,
+     "h": 1402
+    }
+   },
    "media": [
     {
      "type": "image",
      "thumb": {
-      "src": "media/krovavaya-koroleva/01-thumb.webp",
+      "src": "media/beladonna/01-thumb.webp",
       "w": 200,
-      "h": 285
+      "h": 250
      },
      "card": {
-      "src": "media/krovavaya-koroleva/01-card.webp",
+      "src": "media/beladonna/01-card.webp",
       "w": 700,
-      "h": 997
+      "h": 875
      },
      "large": {
-      "src": "media/krovavaya-koroleva/01-large.webp",
-      "w": 735,
-      "h": 1047
+      "src": "media/beladonna/01-large.webp",
+      "w": 1122,
+      "h": 1402
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/beladonna/02-thumb.webp",
+      "w": 200,
+      "h": 250
+     },
+     "card": {
+      "src": "media/beladonna/02-card.webp",
+      "w": 700,
+      "h": 875
+     },
+     "large": {
+      "src": "media/beladonna/02-large.webp",
+      "w": 1122,
+      "h": 1402
      }
     }
    ],
-   "og": "media/krovavaya-koroleva/og.jpg"
+   "og": "media/beladonna/og.jpg"
   },
   {
-   "slug": "kukla-vudu",
-   "title": "Кукла Вуду",
+   "slug": "eshchyo-ne-gotovo",
+   "title": "Ещё не готово",
    "category": "figurki",
    "categoryName": "Фигурки",
-   "description": "Тестовый товар с видео. Сделан только для проверки сайта.",
-   "size": "12 см",
-   "material": "Смола",
-   "status": "В наличии",
-   "price": "4 500 ₽",
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
    "isNew": false,
    "hasVideo": true,
    "cover": {
     "thumb": {
-     "src": "media/kukla-vudu/01-thumb.webp",
+     "src": "media/eshchyo-ne-gotovo/01-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/kukla-vudu/01-card.webp",
+     "src": "media/eshchyo-ne-gotovo/01-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/kukla-vudu/01-large.webp",
+     "src": "media/eshchyo-ne-gotovo/01-large.webp",
      "w": 1200,
      "h": 1600
     }
    },
    "cover2": {
     "thumb": {
-     "src": "media/kukla-vudu/02-thumb.webp",
+     "src": "media/eshchyo-ne-gotovo/02-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/kukla-vudu/02-card.webp",
+     "src": "media/eshchyo-ne-gotovo/02-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/kukla-vudu/02-large.webp",
+     "src": "media/eshchyo-ne-gotovo/02-large.webp",
      "w": 1200,
      "h": 1600
     }
@@ -247,17 +281,17 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/kukla-vudu/01-thumb.webp",
+      "src": "media/eshchyo-ne-gotovo/01-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/kukla-vudu/01-card.webp",
+      "src": "media/eshchyo-ne-gotovo/01-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/kukla-vudu/01-large.webp",
+      "src": "media/eshchyo-ne-gotovo/01-large.webp",
       "w": 1200,
       "h": 1600
      }
@@ -265,17 +299,17 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/kukla-vudu/02-thumb.webp",
+      "src": "media/eshchyo-ne-gotovo/02-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/kukla-vudu/02-card.webp",
+      "src": "media/eshchyo-ne-gotovo/02-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/kukla-vudu/02-large.webp",
+      "src": "media/eshchyo-ne-gotovo/02-large.webp",
       "w": 1200,
       "h": 1600
      }
@@ -283,87 +317,87 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/kukla-vudu/03-thumb.webp",
+      "src": "media/eshchyo-ne-gotovo/03-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/kukla-vudu/03-card.webp",
+      "src": "media/eshchyo-ne-gotovo/03-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/kukla-vudu/03-large.webp",
+      "src": "media/eshchyo-ne-gotovo/03-large.webp",
       "w": 1200,
       "h": 1600
      }
     },
     {
      "type": "video",
-     "src": "media/kukla-vudu/video.mp4",
+     "src": "media/eshchyo-ne-gotovo/video.mp4",
      "poster": {
       "thumb": {
-       "src": "media/kukla-vudu/video-poster-thumb.webp",
+       "src": "media/eshchyo-ne-gotovo/video-poster-thumb.webp",
        "w": 200,
        "h": 267
       },
       "card": {
-       "src": "media/kukla-vudu/video-poster-card.webp",
+       "src": "media/eshchyo-ne-gotovo/video-poster-card.webp",
        "w": 480,
        "h": 640
       },
       "large": {
-       "src": "media/kukla-vudu/video-poster-large.webp",
+       "src": "media/eshchyo-ne-gotovo/video-poster-large.webp",
        "w": 480,
        "h": 640
       }
      }
     }
    ],
-   "og": "media/kukla-vudu/og.jpg"
+   "og": "media/eshchyo-ne-gotovo/og.jpg"
   },
   {
-   "slug": "brelok-cherep",
-   "title": "Брелок Череп",
+   "slug": "eshchyo-chut-chut",
+   "title": "ЕЩЁ ЧУТЬ-ЧУТЬ",
    "category": "obvesy",
    "categoryName": "Обвесы",
-   "description": "Тестовый товар-заглушка.",
-   "size": "4 см",
-   "material": "Смола, металл",
-   "status": "Под заказ",
-   "price": "1 500 ₽",
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
    "isNew": false,
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/brelok-cherep/01-thumb.webp",
+     "src": "media/eshchyo-chut-chut/01-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/brelok-cherep/01-card.webp",
+     "src": "media/eshchyo-chut-chut/01-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/brelok-cherep/01-large.webp",
+     "src": "media/eshchyo-chut-chut/01-large.webp",
      "w": 1200,
      "h": 1600
     }
    },
    "cover2": {
     "thumb": {
-     "src": "media/brelok-cherep/02-thumb.webp",
+     "src": "media/eshchyo-chut-chut/02-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/brelok-cherep/02-card.webp",
+     "src": "media/eshchyo-chut-chut/02-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/brelok-cherep/02-large.webp",
+     "src": "media/eshchyo-chut-chut/02-large.webp",
      "w": 1200,
      "h": 1600
     }
@@ -372,17 +406,17 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/brelok-cherep/01-thumb.webp",
+      "src": "media/eshchyo-chut-chut/01-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/brelok-cherep/01-card.webp",
+      "src": "media/eshchyo-chut-chut/01-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/brelok-cherep/01-large.webp",
+      "src": "media/eshchyo-chut-chut/01-large.webp",
       "w": 1200,
       "h": 1600
      }
@@ -390,27 +424,27 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/brelok-cherep/02-thumb.webp",
+      "src": "media/eshchyo-chut-chut/02-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/brelok-cherep/02-card.webp",
+      "src": "media/eshchyo-chut-chut/02-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/brelok-cherep/02-large.webp",
+      "src": "media/eshchyo-chut-chut/02-large.webp",
       "w": 1200,
       "h": 1600
      }
     }
    ],
-   "og": "media/brelok-cherep/og.jpg"
+   "og": "media/eshchyo-chut-chut/og.jpg"
   },
   {
-   "slug": "driada",
-   "title": "Дриада",
+   "slug": "mirel",
+   "title": "МИРЕЛЬ",
    "category": "byusty",
    "categoryName": "Бюсты",
    "description": "",
@@ -422,172 +456,120 @@
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/driada/01-thumb.webp",
+     "src": "media/mirel/01-thumb.webp",
      "w": 200,
-     "h": 285
+     "h": 250
     },
     "card": {
-     "src": "media/driada/01-card.webp",
+     "src": "media/mirel/01-card.webp",
      "w": 700,
-     "h": 997
+     "h": 875
     },
     "large": {
-     "src": "media/driada/01-large.webp",
-     "w": 735,
-     "h": 1047
+     "src": "media/mirel/01-large.webp",
+     "w": 1122,
+     "h": 1402
     }
    },
-   "cover2": null,
+   "cover2": {
+    "thumb": {
+     "src": "media/mirel/02-thumb.webp",
+     "w": 200,
+     "h": 250
+    },
+    "card": {
+     "src": "media/mirel/02-card.webp",
+     "w": 700,
+     "h": 875
+    },
+    "large": {
+     "src": "media/mirel/02-large.webp",
+     "w": 1122,
+     "h": 1402
+    }
+   },
    "media": [
     {
      "type": "image",
      "thumb": {
-      "src": "media/driada/01-thumb.webp",
+      "src": "media/mirel/01-thumb.webp",
       "w": 200,
-      "h": 285
+      "h": 250
      },
      "card": {
-      "src": "media/driada/01-card.webp",
+      "src": "media/mirel/01-card.webp",
       "w": 700,
-      "h": 997
+      "h": 875
      },
      "large": {
-      "src": "media/driada/01-large.webp",
-      "w": 735,
-      "h": 1047
+      "src": "media/mirel/01-large.webp",
+      "w": 1122,
+      "h": 1402
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/mirel/02-thumb.webp",
+      "w": 200,
+      "h": 250
+     },
+     "card": {
+      "src": "media/mirel/02-card.webp",
+      "w": 700,
+      "h": 875
+     },
+     "large": {
+      "src": "media/mirel/02-large.webp",
+      "w": 1122,
+      "h": 1402
      }
     }
    ],
-   "og": "media/driada/og.jpg"
+   "og": "media/mirel/og.jpg"
   },
   {
-   "slug": "gotichnyy-angel",
-   "title": "Готичный ангел",
+   "slug": "v-razrabotke",
+   "title": "В разработке",
    "category": "figurki",
    "categoryName": "Фигурки",
-   "description": "Тестовый товар-заглушка.",
-   "size": "10 см",
-   "material": "",
-   "status": "Под заказ",
-   "price": "от 6000 руб",
-   "isNew": false,
-   "hasVideo": false,
-   "cover": {
-    "thumb": {
-     "src": "media/gotichnyy-angel/01-thumb.webp",
-     "w": 200,
-     "h": 267
-    },
-    "card": {
-     "src": "media/gotichnyy-angel/01-card.webp",
-     "w": 700,
-     "h": 933
-    },
-    "large": {
-     "src": "media/gotichnyy-angel/01-large.webp",
-     "w": 1200,
-     "h": 1600
-    }
-   },
-   "cover2": {
-    "thumb": {
-     "src": "media/gotichnyy-angel/02-thumb.webp",
-     "w": 200,
-     "h": 267
-    },
-    "card": {
-     "src": "media/gotichnyy-angel/02-card.webp",
-     "w": 700,
-     "h": 933
-    },
-    "large": {
-     "src": "media/gotichnyy-angel/02-large.webp",
-     "w": 1200,
-     "h": 1600
-    }
-   },
-   "media": [
-    {
-     "type": "image",
-     "thumb": {
-      "src": "media/gotichnyy-angel/01-thumb.webp",
-      "w": 200,
-      "h": 267
-     },
-     "card": {
-      "src": "media/gotichnyy-angel/01-card.webp",
-      "w": 700,
-      "h": 933
-     },
-     "large": {
-      "src": "media/gotichnyy-angel/01-large.webp",
-      "w": 1200,
-      "h": 1600
-     }
-    },
-    {
-     "type": "image",
-     "thumb": {
-      "src": "media/gotichnyy-angel/02-thumb.webp",
-      "w": 200,
-      "h": 267
-     },
-     "card": {
-      "src": "media/gotichnyy-angel/02-card.webp",
-      "w": 700,
-      "h": 933
-     },
-     "large": {
-      "src": "media/gotichnyy-angel/02-large.webp",
-      "w": 1200,
-      "h": 1600
-     }
-    }
-   ],
-   "og": "media/gotichnyy-angel/og.jpg"
-  },
-  {
-   "slug": "sergi-vishnya",
-   "title": "Серьги Вишня",
-   "category": "obvesy",
-   "categoryName": "Обвесы",
-   "description": "Тестовый товар-заглушка. Продано.",
+   "description": "",
    "size": "",
    "material": "",
-   "status": "Продано",
-   "price": "900 ₽",
+   "status": "",
+   "price": "",
    "isNew": false,
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/sergi-vishnya/01-thumb.webp",
+     "src": "media/v-razrabotke/01-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/sergi-vishnya/01-card.webp",
+     "src": "media/v-razrabotke/01-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/sergi-vishnya/01-large.webp",
+     "src": "media/v-razrabotke/01-large.webp",
      "w": 1200,
      "h": 1600
     }
    },
    "cover2": {
     "thumb": {
-     "src": "media/sergi-vishnya/02-thumb.webp",
+     "src": "media/v-razrabotke/02-thumb.webp",
      "w": 200,
      "h": 267
     },
     "card": {
-     "src": "media/sergi-vishnya/02-card.webp",
+     "src": "media/v-razrabotke/02-card.webp",
      "w": 700,
      "h": 933
     },
     "large": {
-     "src": "media/sergi-vishnya/02-large.webp",
+     "src": "media/v-razrabotke/02-large.webp",
      "w": 1200,
      "h": 1600
     }
@@ -596,17 +578,17 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/sergi-vishnya/01-thumb.webp",
+      "src": "media/v-razrabotke/01-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/sergi-vishnya/01-card.webp",
+      "src": "media/v-razrabotke/01-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/sergi-vishnya/01-large.webp",
+      "src": "media/v-razrabotke/01-large.webp",
       "w": 1200,
       "h": 1600
      }
@@ -614,27 +596,113 @@
     {
      "type": "image",
      "thumb": {
-      "src": "media/sergi-vishnya/02-thumb.webp",
+      "src": "media/v-razrabotke/02-thumb.webp",
       "w": 200,
       "h": 267
      },
      "card": {
-      "src": "media/sergi-vishnya/02-card.webp",
+      "src": "media/v-razrabotke/02-card.webp",
       "w": 700,
       "h": 933
      },
      "large": {
-      "src": "media/sergi-vishnya/02-large.webp",
+      "src": "media/v-razrabotke/02-large.webp",
       "w": 1200,
       "h": 1600
      }
     }
    ],
-   "og": "media/sergi-vishnya/og.jpg"
+   "og": "media/v-razrabotke/og.jpg"
   },
   {
-   "slug": "zhanna-dark",
-   "title": "Жанна Дарк",
+   "slug": "v-ozhidanii",
+   "title": "В ОЖИДАНИИ",
+   "category": "obvesy",
+   "categoryName": "Обвесы",
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
+   "isNew": false,
+   "hasVideo": false,
+   "cover": {
+    "thumb": {
+     "src": "media/v-ozhidanii/01-thumb.webp",
+     "w": 200,
+     "h": 267
+    },
+    "card": {
+     "src": "media/v-ozhidanii/01-card.webp",
+     "w": 700,
+     "h": 933
+    },
+    "large": {
+     "src": "media/v-ozhidanii/01-large.webp",
+     "w": 1200,
+     "h": 1600
+    }
+   },
+   "cover2": {
+    "thumb": {
+     "src": "media/v-ozhidanii/02-thumb.webp",
+     "w": 200,
+     "h": 267
+    },
+    "card": {
+     "src": "media/v-ozhidanii/02-card.webp",
+     "w": 700,
+     "h": 933
+    },
+    "large": {
+     "src": "media/v-ozhidanii/02-large.webp",
+     "w": 1200,
+     "h": 1600
+    }
+   },
+   "media": [
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/v-ozhidanii/01-thumb.webp",
+      "w": 200,
+      "h": 267
+     },
+     "card": {
+      "src": "media/v-ozhidanii/01-card.webp",
+      "w": 700,
+      "h": 933
+     },
+     "large": {
+      "src": "media/v-ozhidanii/01-large.webp",
+      "w": 1200,
+      "h": 1600
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/v-ozhidanii/02-thumb.webp",
+      "w": 200,
+      "h": 267
+     },
+     "card": {
+      "src": "media/v-ozhidanii/02-card.webp",
+      "w": 700,
+      "h": 933
+     },
+     "large": {
+      "src": "media/v-ozhidanii/02-large.webp",
+      "w": 1200,
+      "h": 1600
+     }
+    }
+   ],
+   "og": "media/v-ozhidanii/og.jpg"
+  },
+  {
+   "slug": "lilit",
+   "title": "ЛИЛИТ",
    "category": "byusty",
    "categoryName": "Бюсты",
    "description": "",
@@ -646,43 +714,77 @@
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/zhanna-dark/01-thumb.webp",
+     "src": "media/lilit/01-thumb.webp",
      "w": 200,
-     "h": 266
+     "h": 250
     },
     "card": {
-     "src": "media/zhanna-dark/01-card.webp",
+     "src": "media/lilit/01-card.webp",
      "w": 700,
-     "h": 930
+     "h": 875
     },
     "large": {
-     "src": "media/zhanna-dark/01-large.webp",
-     "w": 735,
-     "h": 976
+     "src": "media/lilit/01-large.webp",
+     "w": 1122,
+     "h": 1402
     }
    },
-   "cover2": null,
+   "cover2": {
+    "thumb": {
+     "src": "media/lilit/02-thumb.webp",
+     "w": 200,
+     "h": 250
+    },
+    "card": {
+     "src": "media/lilit/02-card.webp",
+     "w": 700,
+     "h": 875
+    },
+    "large": {
+     "src": "media/lilit/02-large.webp",
+     "w": 1122,
+     "h": 1402
+    }
+   },
    "media": [
     {
      "type": "image",
      "thumb": {
-      "src": "media/zhanna-dark/01-thumb.webp",
+      "src": "media/lilit/01-thumb.webp",
       "w": 200,
-      "h": 266
+      "h": 250
      },
      "card": {
-      "src": "media/zhanna-dark/01-card.webp",
+      "src": "media/lilit/01-card.webp",
       "w": 700,
-      "h": 930
+      "h": 875
      },
      "large": {
-      "src": "media/zhanna-dark/01-large.webp",
-      "w": 735,
-      "h": 976
+      "src": "media/lilit/01-large.webp",
+      "w": 1122,
+      "h": 1402
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/lilit/02-thumb.webp",
+      "w": 200,
+      "h": 250
+     },
+     "card": {
+      "src": "media/lilit/02-card.webp",
+      "w": 700,
+      "h": 875
+     },
+     "large": {
+      "src": "media/lilit/02-large.webp",
+      "w": 1122,
+      "h": 1402
      }
     }
    ],
-   "og": "media/zhanna-dark/og.jpg"
+   "og": "media/lilit/og.jpg"
   }
  ]
 }
