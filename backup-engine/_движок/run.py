@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Точка входа для .bat-файлов (запускается портативным Python из _движок\\python).
+"""Точка входа для .bat-файлов (запускается Python из venv: %LOCALAPPDATA%\\redkiss\\venv).
    run.py view      — собрать и открыть сайт у себя
    run.py publish   — собрать и выложить в интернет
-   run.py build     — только собрать"""
+   run.py build     — только собрать
+   run.py access    — проверить вход в GitHub (для Подготовка.bat)"""
 import sys
 import traceback
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-sys.dont_write_bytecode = True          # не мусорим файлами __pycache__ на Google Диске
+sys.dont_write_bytecode = True          # не мусорим файлами __pycache__ в рабочей папке
 try:
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")
@@ -23,14 +24,16 @@ def check_libs():
         import PIL  # noqa: F401
         return True
     except Exception:
-        print("\nНе найдены нужные библиотеки Python в папке _движок\\python.")
-        print("Похоже, папка _движок скопировалась не целиком (Google Диск ещё не докачал файлы?).")
-        print("Подожди, пока Google Диск закончит синхронизацию, и запусти ещё раз.")
+        print("\nНе найдены нужные библиотеки Python.")
+        print("Запусти файл Подготовка.bat — он их установит (достаточно один раз на каждом компьютере).")
         return False
 
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "build"
+    if cmd == "access":
+        import publish
+        return 0 if publish.check_access() else 1
     if not check_libs():
         return 1
 
@@ -72,6 +75,7 @@ if __name__ == "__main__":
     except Exception:
         from common import ERROR_LOG
         try:
+            ERROR_LOG.parent.mkdir(parents=True, exist_ok=True)
             ERROR_LOG.write_text(traceback.format_exc(), encoding="utf-8")
             where = str(ERROR_LOG)
         except Exception:

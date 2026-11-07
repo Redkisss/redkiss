@@ -10,9 +10,13 @@ ROOT = ENGINE.parent                          # рабочая папка на G
 PRODUCTS = ROOT / "ТОВАРЫ"
 XLSX = ROOT / "товары.xlsx"
 
-# Служебная копия репозитория — ВНЕ Google Диска, у каждого ПК своя.
-# Тут собирается сайт (docs/), лежит кэш картинок и делается git commit/push.
-SERVICE = Path(os.environ.get("REDKISS_SERVICE") or (Path.home() / ".redkiss-publish"))
+# Всё служебное (venv с библиотеками, кэш картинок, копия репозитория, журнал ошибок)
+# живёт ВНЕ рабочей папки: %LOCALAPPDATA%\redkiss. У каждого ПК своё.
+DATA_DIR = Path(os.environ.get("LOCALAPPDATA") or (Path.home() / "AppData" / "Local")) / "redkiss"
+LEGACY_SERVICE = Path.home() / ".redkiss-publish"      # старое место служебной копии (до 2026-11-07)
+
+# Служебная копия репозитория: тут собирается сайт (docs/), лежит кэш картинок и делается git commit/push.
+SERVICE = Path(os.environ.get("REDKISS_SERVICE") or (DATA_DIR / "service"))
 DOCS = SERVICE / "docs"
 CACHE_DIR = SERVICE / "_cache"
 BACKUP_DIR_NAME = "backup-engine"             # куда в репозиторий кладётся копия движка
@@ -20,9 +24,7 @@ BACKUP_DIR_NAME = "backup-engine"             # куда в репозитори
 BRAND = ENGINE / "Brand"
 STATIC = ENGINE / "static"
 TEMPLATES = ENGINE / "templates"
-PY_PORTABLE = ENGINE / "python"
-GIT_PORTABLE = ENGINE / "git"
-ERROR_LOG = ROOT / "ОШИБКА.txt"
+ERROR_LOG = DATA_DIR / "ОШИБКА.txt"
 
 
 def repo_url():

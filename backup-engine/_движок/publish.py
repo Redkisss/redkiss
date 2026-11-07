@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Публикация через скрытую служебную копию репозитория (%USERPROFILE%\\.redkiss-publish),
-которая лежит ВНЕ Google Диска. Все сообщения — по-русски и простыми словами."""
+"""Публикация через служебную копию репозитория (%LOCALAPPDATA%\\redkiss\\service),
+которая лежит ВНЕ рабочей папки. Все сообщения — по-русски и простыми словами."""
 import datetime
 import json
 import os
@@ -9,7 +9,7 @@ import subprocess
 import time
 from pathlib import Path
 
-from common import BACKUP_DIR_NAME, CACHE_DIR, ENGINE, GIT_PORTABLE, ROOT, SERVICE, repo_url
+from common import BACKUP_DIR_NAME, CACHE_DIR, ENGINE, LEGACY_SERVICE, ROOT, SERVICE, repo_url
 
 BRANCH = "main"
 ALLOWED_TOP = {".git", ".gitignore", "docs", "_cache", BACKUP_DIR_NAME}
@@ -22,18 +22,25 @@ AUTH_WORDS = ("authentication", "403", "could not read username", "permission de
 
 # ----------------------------------------------------------------- git
 def find_git():
-    exe = GIT_PORTABLE / "cmd" / "git.exe"
-    if exe.exists():
-        return str(exe)
-    return shutil.which("git")
+    """Системный Git. Сразу после установки PATH в старом окне ещё не обновлён,
+    поэтому кроме PATH смотрим и в обычные места установки."""
+    found = shutil.which("git")
+    if found:
+        return found
+    for var in ("ProgramFiles", "ProgramW6432", "ProgramFiles(x86)", "LOCALAPPDATA"):
+        base = os.environ.get(var)
+        if not base:
+            continue
+        for sub in ("Git", "Programs/Git"):
+            exe = Path(base) / sub / "cmd" / "git.exe"
+            if exe.exists():
+                return str(exe)
+    return None
 
 
 def _env():
     env = dict(os.environ)
     env["GIT_TERMINAL_PROMPT"] = "0"       # git сам вопросов не задаёт; вход — через окно браузера (GCM)
-    if GIT_PORTABLE.exists():
-        extra = [str(GIT_PORTABLE / p) for p in ("ucrt64/bin", "usr/bin", "cmd")]
-        env["PATH"] = os.pathsep.join(extra + [env.get("PATH", "")])
     return env
 
 
@@ -71,19 +78,17 @@ def explain_git_error(err, log):
     log("\nТехнические подробности (можно прислать мне):\n" + err)
 
 
-def hide_dir(path):
-    try:
-        import ctypes
-        ctypes.windll.kernel32.SetFileAttributesW(str(path), 0x2 | 0x10)   # скрытая папка
-    except Exception:
-        pass
-
-
 def ensure_service_dir():
+    # Старая служебная копия (C:\Users\...\.redkiss-publish) переезжает в %LOCALAPPDATA%\redkiss\service
+    # вместе с кэшем картинок — чтобы не пересжимать фото заново.
+    if (not os.environ.get("REDKISS_SERVICE") and LEGACY_SERVICE.is_dir() and not SERVICE.exists()):
+        try:
+            SERVICE.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(LEGACY_SERVICE), str(SERVICE))
+        except OSError:
+            pass
     SERVICE.mkdir(parents=True, exist_ok=True)
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
-    if SERVICE.name.startswith("."):
-        hide_dir(SERVICE)
 
 
 # ----------------------------------------------------------------- шаг 1: подготовить служебную копию
@@ -91,8 +96,7 @@ def prepare_repo(log=print):
     """Если копии нет — создаёт; затем fetch + reset --hard origin/main.
     Сайт всё равно пересобирается целиком, поэтому локальные правки в копии не нужны."""
     if not find_git():
-        log("\nНе найден Git (он должен лежать в папке _движок\\git). Верни папку _движок целиком "
-            "(из Google Диска или из его корзины) и запусти ещё раз.")
+        log("\nНа этом компьютере не найден Git. Сначала запусти файл Подготовка.bat (он установит всё нужное).")
         return False
     url = repo_url()
     if not url:
@@ -128,22 +132,37 @@ def prepare_repo(log=print):
     return True
 
 
+def check_access(log=print):
+    """Для Подготовка.bat: включает вход через Git Credential Manager и проверяет, что запись
+    в репозиторий разрешена (при необходимости откроется окно браузера «Sign in to GitHub»)."""
+    if not find_git():
+        log("Не найден Git.")
+        return False
+    if not git("config", "--get", "credential.helper", cwd=ENGINE).stdout.strip():
+        git("config", "--global", "credential.helper", "manager", cwd=ENGINE)
+        log("Включён вход в GitHub через Git Credential Manager.")
+    if not prepare_repo(log):
+        return False
+    log("Проверяю право записи в репозиторий (если откроется окно браузера — войди в GitHub и нажми Authorize)…")
+    r = git_retry("push", "--dry-run", "origin", BRANCH)
+    if r.returncode != 0:
+        log("\nНе получилось подтвердить доступ к репозиторию.")
+        explain_git_error((r.stdout + r.stderr).strip(), log)
+        return False
+    log("Доступ к GitHub работает.")
+    return True
+
+
 # ----------------------------------------------------------------- шаг 2: резервная копия движка
 def sync_backup():
-    """Копия _движка (без python и git — они тяжёлые), bat-файлов и инструкции — в отдельную папку репозитория."""
+    """Копия _движка, bat-файлов и инструкции — в отдельную папку репозитория."""
     dest = SERVICE / BACKUP_DIR_NAME
     if dest.exists():
         shutil.rmtree(dest, ignore_errors=True)
     dest.mkdir(parents=True)
 
     def ignore(d, names):
-        skip = set()
-        for n in names:
-            if n in ("__pycache__", "_cache") or n.endswith(".pyc"):
-                skip.add(n)
-            elif Path(d) == ENGINE and n in ("python", "git"):
-                skip.add(n)
-        return skip
+        return {n for n in names if n in ("__pycache__", "_cache", "python", "git") or n.endswith(".pyc")}
 
     shutil.copytree(ENGINE, dest / ENGINE.name, ignore=ignore)
     for p in ROOT.iterdir():
@@ -151,9 +170,9 @@ def sync_backup():
             shutil.copy2(p, dest / p.name)
     (dest / "ЧИТАЙ_МЕНЯ.txt").write_text(
         "Резервная копия движка сайта РЕДКИСС (обновляется при каждой публикации).\n"
-        "Здесь НЕТ тяжёлых портативных программ _движок\\python и _движок\\git, а также фото (ТОВАРЫ) и товары.xlsx.\n"
-        "Чтобы восстановить: положи эти файлы в рабочую папку, а Python (embeddable 3.12, 64-bit, python.org)\n"
-        "и MinGit (github.com/git-for-windows/git/releases) — в _движок\\python и _движок\\git.\n"
+        "Здесь НЕТ фото (ТОВАРЫ) и товары.xlsx, а также Python и Git — они ставятся на каждый ПК отдельно.\n"
+        "Чтобы восстановить: положи эти файлы в рабочую папку, верни свои ТОВАРЫ и товары.xlsx\n"
+        "и запусти Подготовка.bat — он сам поставит Python и Git и настроит вход в GitHub.\n"
         "Подробности — в ИНСТРУКЦИЯ.txt рядом.\n", encoding="utf-8")
 
 
