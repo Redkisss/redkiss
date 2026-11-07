@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T23:26:28",
+ "generated": "2026-11-08T00:16:27",
  "site": {
   "title": "РЕДКИСС",
   "description": "Авторские фигурки из смолы ручной работы: милые бюсты с огромными чёрными глазами, кровь, готика и немного любви.",
@@ -32,7 +32,7 @@
   {
    "slug": "byusty",
    "name": "Бюсты",
-   "count": 3
+   "count": 4
   },
   {
    "slug": "figurki",
@@ -785,6 +785,58 @@
     }
    ],
    "og": "media/lilit/og.jpg"
+  },
+  {
+   "slug": "mip",
+   "title": "МИП",
+   "category": "byusty",
+   "categoryName": "Бюсты",
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
+   "isNew": false,
+   "hasVideo": false,
+   "cover": {
+    "thumb": {
+     "src": "media/mip/01-thumb.webp",
+     "w": 200,
+     "h": 202
+    },
+    "card": {
+     "src": "media/mip/01-card.webp",
+     "w": 700,
+     "h": 707
+    },
+    "large": {
+     "src": "media/mip/01-large.webp",
+     "w": 730,
+     "h": 737
+    }
+   },
+   "cover2": null,
+   "media": [
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/mip/01-thumb.webp",
+      "w": 200,
+      "h": 202
+     },
+     "card": {
+      "src": "media/mip/01-card.webp",
+      "w": 700,
+      "h": 707
+     },
+     "large": {
+      "src": "media/mip/01-large.webp",
+      "w": 730,
+      "h": 737
+     }
+    }
+   ],
+   "og": "media/mip/og.jpg"
   }
  ]
 }
