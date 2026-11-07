@@ -1,0 +1,2 @@
+# Адрес репозитория сайта на GitHub (одна строка)
+https://github.com/Redkisss/redkiss.git
