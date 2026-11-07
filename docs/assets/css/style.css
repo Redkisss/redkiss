@@ -174,7 +174,9 @@ main { flex: 1 0 auto; }
 
 /* ---------- страница товара ---------- */
 .item-page { padding-bottom: 70px; }
-.item-layout { display: grid; grid-template-columns: 90px minmax(0, 1fr) 360px; gap: 28px; align-items: start; }
+.item-layout { display: grid; grid-template-columns: 90px minmax(0, 1fr) 360px; gap: 28px; align-items: start; grid-template-areas: "thumbs stage info"; }
+.thumbs { grid-area: thumbs; } .stage { grid-area: stage; } .info { grid-area: info; }
+.item-layout.single { grid-template-columns: minmax(0, 1fr) 360px; grid-template-areas: "stage info"; }
 .thumbs { display: flex; flex-direction: column; gap: 8px; max-height: min(82vh, 760px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--blood) transparent; padding-right: 2px; }
 .thumb { position: relative; flex: 0 0 auto; width: 100%; aspect-ratio: 3 / 4; padding: 0; border: 1px solid transparent; background: var(--surface); border-radius: 3px; overflow: hidden; cursor: pointer; opacity: .55; transition: opacity .25s, border-color .25s; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
@@ -207,9 +209,9 @@ main { flex: 1 0 auto; }
 .related { margin-top: 70px; }
 .related h2 { font: italic 600 28px/1.2 var(--serif); text-align: center; margin-bottom: 26px; }
 .related .star { font-size: 16px; margin-right: 6px; }
-@media (max-width: 1099px) { .item-layout { grid-template-columns: 76px minmax(0, 1fr) 300px; gap: 20px; } .item-title { font-size: 34px; } }
+@media (max-width: 1099px) { .item-layout { grid-template-columns: 76px minmax(0, 1fr) 300px; gap: 20px; } .item-layout.single { grid-template-columns: minmax(0, 1fr) 300px; } .item-title { font-size: 34px; } }
 @media (max-width: 899px) {
-  .item-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "stage" "thumbs" "info"; gap: 14px; }
+  .item-layout, .item-layout.single { grid-template-columns: minmax(0, 1fr); grid-template-areas: "stage" "thumbs" "info"; gap: 14px; }
   .stage { grid-area: stage; } .thumbs { grid-area: thumbs; } .info { grid-area: info; position: static; padding-top: 10px; }
   .thumbs { flex-direction: row; max-height: none; overflow-x: auto; overflow-y: hidden; padding: 0 0 6px; }
   .thumb { width: 72px; }

@@ -204,8 +204,13 @@ def build(log=print):
                  f"строка подсвечена красным.")
 
     # --- адрес сайта
-    site_url = detect_site_url(xl.settings["site_url"])
-    if site_url and not xl.settings["site_url"]:
+    cfg_url = xl.settings["site_url"]
+    git_url = detect_site_url("")
+    if git_url and (not cfg_url or urlparse(detect_site_url(cfg_url)).netloc.endswith("github.io")):
+        site_url = git_url      # адрес github.io всегда берём из актуального подключения Git
+    else:
+        site_url = detect_site_url(cfg_url)   # свой домен из настроек не трогаем
+    if site_url and site_url != cfg_url and (not cfg_url or urlparse(detect_site_url(cfg_url)).netloc.endswith("github.io")):
         xl.set_site_url(site_url)
 
     # --- запись Excel (дописать новые папки)

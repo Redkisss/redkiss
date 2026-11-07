@@ -178,7 +178,7 @@ def item_content(base, item, settings, cat_name):
                f'rel="noopener" id="contactBtn">Написать мне</a>')
     back = (f'<a class="back" href="{base}catalog/?cat={esc(item["category"])}">← {esc(back_phrase(cat_name))}</a>')
     return f'''<main id="main" class="wrap item-page" data-slug="{esc(item["slug"])}">
-<div class="item-layout">
+<div class="item-layout{"" if multi else " single"}">
 <div class="thumbs" id="thumbs" aria-label="Фото и видео"{"" if multi else " hidden"}>{thumbs}</div>
 <div class="stage" id="stage">
 <div class="stage-media" id="stageMedia">{stage}</div>
