@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T02:29:24",
+ "generated": "2026-11-10T00:18:03",
  "site": {
   "title": "РЕДКИСС",
   "description": "Авторские фигурки из смолы ручной работы: милые бюсты с огромными чёрными глазами, кровь, готика и немного любви.",
@@ -787,56 +787,90 @@
    "og": "media/lilit/og.jpg"
   },
   {
-   "slug": "mip",
-   "title": "МИП",
+   "slug": "dzhiksi",
+   "title": "ДЖИКСИ",
    "category": "byusty",
    "categoryName": "Бюсты",
-   "description": "",
-   "size": "",
-   "material": "",
+   "description": "Коллекция \"Инопланетянки\"",
+   "size": "7х13х6",
+   "material": "Фотополимерная смола",
    "status": "",
-   "price": "",
+   "price": "3 000 ₽",
    "isNew": false,
    "hasVideo": false,
    "cover": {
     "thumb": {
-     "src": "media/mip/01-thumb.webp",
+     "src": "media/dzhiksi/01-thumb.webp",
      "w": 200,
-     "h": 202
+     "h": 268
     },
     "card": {
-     "src": "media/mip/01-card.webp",
+     "src": "media/dzhiksi/01-card.webp",
      "w": 700,
-     "h": 707
+     "h": 938
     },
     "large": {
-     "src": "media/mip/01-large.webp",
-     "w": 730,
-     "h": 737
+     "src": "media/dzhiksi/01-large.webp",
+     "w": 1344,
+     "h": 1800
     }
    },
-   "cover2": null,
+   "cover2": {
+    "thumb": {
+     "src": "media/dzhiksi/02-thumb.webp",
+     "w": 200,
+     "h": 250
+    },
+    "card": {
+     "src": "media/dzhiksi/02-card.webp",
+     "w": 700,
+     "h": 875
+    },
+    "large": {
+     "src": "media/dzhiksi/02-large.webp",
+     "w": 1122,
+     "h": 1402
+    }
+   },
    "media": [
     {
      "type": "image",
      "thumb": {
-      "src": "media/mip/01-thumb.webp",
+      "src": "media/dzhiksi/01-thumb.webp",
       "w": 200,
-      "h": 202
+      "h": 268
      },
      "card": {
-      "src": "media/mip/01-card.webp",
+      "src": "media/dzhiksi/01-card.webp",
       "w": 700,
-      "h": 707
+      "h": 938
      },
      "large": {
-      "src": "media/mip/01-large.webp",
-      "w": 730,
-      "h": 737
+      "src": "media/dzhiksi/01-large.webp",
+      "w": 1344,
+      "h": 1800
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/dzhiksi/02-thumb.webp",
+      "w": 200,
+      "h": 250
+     },
+     "card": {
+      "src": "media/dzhiksi/02-card.webp",
+      "w": 700,
+      "h": 875
+     },
+     "large": {
+      "src": "media/dzhiksi/02-large.webp",
+      "w": 1122,
+      "h": 1402
      }
     }
    ],
-   "og": "media/mip/og.jpg"
+   "og": "media/dzhiksi/og.jpg"
   }
  ]
 }
