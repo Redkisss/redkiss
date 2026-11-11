@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T01:06:46",
+ "generated": "2026-11-12T01:07:33",
  "site": {
   "title": "РЕДКИСС",
   "description": "Авторские фигурки из смолы ручной работы: милые бюсты с огромными чёрными глазами, кровь, готика и немного любви.",
@@ -24,6 +24,11 @@
   ]
  },
  "categories": [
+  {
+   "slug": "tsvety",
+   "name": "Цветы",
+   "count": 1
+  },
   {
    "slug": "byusty",
    "name": "Бюсты",
@@ -392,6 +397,92 @@
     }
    ],
    "og": "media/dzhiksi/og.jpg"
+  },
+  {
+   "slug": "tsvety",
+   "title": "Цветы",
+   "category": "tsvety",
+   "categoryName": "Цветы",
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
+   "isNew": false,
+   "hasVideo": false,
+   "cover": {
+    "thumb": {
+     "src": "media/tsvety/01-tsvety-thumb.webp",
+     "w": 200,
+     "h": 266
+    },
+    "card": {
+     "src": "media/tsvety/01-tsvety-card.webp",
+     "w": 700,
+     "h": 930
+    },
+    "large": {
+     "src": "media/tsvety/01-tsvety-large.webp",
+     "w": 1088,
+     "h": 1445
+    }
+   },
+   "cover2": {
+    "thumb": {
+     "src": "media/tsvety/02-tsvety-thumb.webp",
+     "w": 200,
+     "h": 219
+    },
+    "card": {
+     "src": "media/tsvety/02-tsvety-card.webp",
+     "w": 700,
+     "h": 767
+    },
+    "large": {
+     "src": "media/tsvety/02-tsvety-large.webp",
+     "w": 1198,
+     "h": 1313
+    }
+   },
+   "media": [
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/tsvety/01-tsvety-thumb.webp",
+      "w": 200,
+      "h": 266
+     },
+     "card": {
+      "src": "media/tsvety/01-tsvety-card.webp",
+      "w": 700,
+      "h": 930
+     },
+     "large": {
+      "src": "media/tsvety/01-tsvety-large.webp",
+      "w": 1088,
+      "h": 1445
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/tsvety/02-tsvety-thumb.webp",
+      "w": 200,
+      "h": 219
+     },
+     "card": {
+      "src": "media/tsvety/02-tsvety-card.webp",
+      "w": 700,
+      "h": 767
+     },
+     "large": {
+      "src": "media/tsvety/02-tsvety-large.webp",
+      "w": 1198,
+      "h": 1313
+     }
+    }
+   ],
+   "og": "media/tsvety/og.jpg"
   }
  ]
 }
