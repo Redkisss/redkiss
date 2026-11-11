@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T00:24:59",
+ "generated": "2026-11-12T01:06:46",
  "site": {
   "title": "РЕДКИСС",
   "description": "Авторские фигурки из смолы ручной работы: милые бюсты с огромными чёрными глазами, кровь, готика и немного любви.",
@@ -320,19 +320,19 @@
    },
    "cover2": {
     "thumb": {
-     "src": "media/dzhiksi/02-thumb.webp",
+     "src": "media/dzhiksi/01-2-thumb.webp",
      "w": 200,
-     "h": 250
+     "h": 202
     },
     "card": {
-     "src": "media/dzhiksi/02-card.webp",
+     "src": "media/dzhiksi/01-2-card.webp",
      "w": 700,
-     "h": 875
+     "h": 707
     },
     "large": {
-     "src": "media/dzhiksi/02-large.webp",
-     "w": 1122,
-     "h": 1402
+     "src": "media/dzhiksi/01-2-large.webp",
+     "w": 730,
+     "h": 737
     }
    },
    "media": [
@@ -352,6 +352,24 @@
       "src": "media/dzhiksi/01-large.webp",
       "w": 1344,
       "h": 1800
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/dzhiksi/01-2-thumb.webp",
+      "w": 200,
+      "h": 202
+     },
+     "card": {
+      "src": "media/dzhiksi/01-2-card.webp",
+      "w": 700,
+      "h": 707
+     },
+     "large": {
+      "src": "media/dzhiksi/01-2-large.webp",
+      "w": 730,
+      "h": 737
      }
     },
     {
