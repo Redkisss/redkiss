@@ -119,10 +119,10 @@ main { flex: 1 0 auto; }
 
 /* ---------- категории и разделитель ---------- */
 .cats { display: flex; justify-content: center; padding: 6px 16px 0; }
-.cats ul { list-style: none; margin: 0; padding: 0 0 6px; display: flex; gap: 38px; overflow-x: auto; max-width: 100%; justify-content: safe center; scrollbar-width: none; }
+.cats ul { list-style: none; margin: 0; padding: 0 0 6px; display: flex; gap: 8px 38px; flex-wrap: wrap; max-width: 100%; justify-content: safe center; scrollbar-width: none; }
 .cats ul::-webkit-scrollbar { display: none; }
 .cats a {
-  position: relative; display: block; padding: 10px 2px 16px; white-space: nowrap;
+  position: relative; display: block; padding: 10px 2px 16px; overflow-wrap: anywhere; min-height: 44px;
   font: 600 13px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--bone-dim);
   transition: color .25s;
 }
@@ -247,3 +247,10 @@ body.lb-open { overflow: hidden; }
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
   .card { opacity: 1; transform: none; }
 }
+
+.catalog-search { display: flex; width: min(420px, calc(100% - 32px)); margin: 14px auto 0; border-bottom: 1px solid var(--bone-dim); }
+.catalog-search input { width: 100%; min-width: 0; padding: 10px 4px; border: 0; background: transparent; color: var(--bone); font: inherit; font-size: 14px; }
+.catalog-search input::-webkit-search-cancel-button { display: none; }
+.catalog-search button { flex: 0 0 44px; border: 0; background: transparent; color: var(--bone-dim); font-size: 24px; cursor: pointer; }
+.item-collection { color: var(--red-bright); font-size: 12px; }
+.empty .btn { margin-top: 20px; }

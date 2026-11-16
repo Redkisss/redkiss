@@ -4,6 +4,17 @@
   var RK = window.RK, D = RK.data, BASE = RK.base, esc = RK.esc;
   var page = document.querySelector('.item-page');
   if (!page) return;
+  var savedCatalog = new URLSearchParams(location.search).get('catalog');
+  if (savedCatalog !== null) {
+    var back = document.querySelector('.back');
+    if (back) {
+      var target = new URL(BASE + 'catalog/', location.href);
+      var params = new URLSearchParams(savedCatalog);
+      ['cat', 'collection', 'q'].forEach(function (k) { if (params.has(k)) target.searchParams.set(k, params.get(k)); });
+      back.href = target.href;
+      back.textContent = '← Назад в каталог';
+    }
+  }
   var slug = page.getAttribute('data-slug');
   var item = null, pos = 0;
   D.items.forEach(function (it, i) { if (it.slug === slug) { item = it; pos = i; } });
