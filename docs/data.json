@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T00:23:04",
+ "generated": "2026-11-20T01:12:27",
  "site": {
   "title": "РЕДКИСС",
   "description": "Авторские фигурки из смолы ручной работы: милые бюсты с огромными чёрными глазами, кровь, готика и немного любви.",
@@ -32,7 +32,7 @@
   {
    "slug": "byusty",
    "name": "Бюсты",
-   "count": 4
+   "count": 5
   }
  ],
  "collections": [
@@ -493,6 +493,112 @@
     }
    ],
    "og": "media/dzhiksi/og.jpg"
+  },
+  {
+   "slug": "kerri",
+   "title": "КЭРРИ",
+   "category": "byusty",
+   "categoryName": "Бюсты",
+   "collection": "",
+   "collectionName": "",
+   "description": "",
+   "size": "",
+   "material": "",
+   "status": "",
+   "price": "",
+   "isNew": false,
+   "hasVideo": false,
+   "cover": {
+    "thumb": {
+     "src": "media/kerri/01-thumb.webp",
+     "w": 200,
+     "h": 250
+    },
+    "card": {
+     "src": "media/kerri/01-card.webp",
+     "w": 700,
+     "h": 875
+    },
+    "large": {
+     "src": "media/kerri/01-large.webp",
+     "w": 1122,
+     "h": 1402
+    }
+   },
+   "cover2": {
+    "thumb": {
+     "src": "media/kerri/02-thumb.webp",
+     "w": 200,
+     "h": 250
+    },
+    "card": {
+     "src": "media/kerri/02-card.webp",
+     "w": 700,
+     "h": 875
+    },
+    "large": {
+     "src": "media/kerri/02-large.webp",
+     "w": 1122,
+     "h": 1402
+    }
+   },
+   "media": [
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/kerri/01-thumb.webp",
+      "w": 200,
+      "h": 250
+     },
+     "card": {
+      "src": "media/kerri/01-card.webp",
+      "w": 700,
+      "h": 875
+     },
+     "large": {
+      "src": "media/kerri/01-large.webp",
+      "w": 1122,
+      "h": 1402
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/kerri/02-thumb.webp",
+      "w": 200,
+      "h": 250
+     },
+     "card": {
+      "src": "media/kerri/02-card.webp",
+      "w": 700,
+      "h": 875
+     },
+     "large": {
+      "src": "media/kerri/02-large.webp",
+      "w": 1122,
+      "h": 1402
+     }
+    },
+    {
+     "type": "image",
+     "thumb": {
+      "src": "media/kerri/03-thumb.webp",
+      "w": 200,
+      "h": 265
+     },
+     "card": {
+      "src": "media/kerri/03-card.webp",
+      "w": 700,
+      "h": 929
+     },
+     "large": {
+      "src": "media/kerri/03-large.webp",
+      "w": 1089,
+      "h": 1445
+     }
+    }
+   ],
+   "og": "media/kerri/og.jpg"
   }
  ]
 }
